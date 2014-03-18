@@ -76,7 +76,6 @@ public class ImmutableSet<T> implements Set<T> {
 		@SuppressWarnings("unchecked")
 		T[] distinct = (T[]) Array.newInstance(values[0].getClass(),
 				values.length);
-		// distinct[0] = values[0];
 		int distinctCount = 0;
 		for (int i = 0; i < values.length; i++) {
 			for (T dv : distinct) {
